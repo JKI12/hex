@@ -8,8 +8,8 @@ import GameState from './states/Game'
 class Game extends Phaser.Game {
   constructor () {
     super({
-      width: 640,
-      height: 480,
+      width: 1280,
+      height: 720,
       parent: 'content',
       renderer: Phaser.Auto
     });
