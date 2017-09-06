@@ -33,7 +33,8 @@ class Map {
         game: this.game,
         x: result.x,
         y: result.y,
-        type: rng === 1 ? terrainTypes.GRASS : terrainTypes.WATER
+        type: rng === 1 ? terrainTypes.GRASS : terrainTypes.WATER,
+        hexInfo: hex
       }));
       hexGroup.add(h);
     }, this);
