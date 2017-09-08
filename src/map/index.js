@@ -25,17 +25,17 @@ export default class Map {
 
     hexes.forEach((hex) => {
       const rng = Math.floor(Math.random() * 2) + 1;
-  
+
       const result = grid.hexToPoint(hex);
-      const h = game.add.existing(new Hex({
+      const h = this.game.add.existing(new Hex({
         game: this.game,
         x: result.x,
         y: result.y,
         type: rng === 1 ? terrainTypes.GRASS : terrainTypes.WATER,
         hexInfo: hex
       }));
-  
+
       this.hexGroup.add(h);
     }, this);
-  }  
+  }
 }

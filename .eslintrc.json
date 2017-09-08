@@ -11,7 +11,8 @@
   "rules": {
     "import/no-unresolved": [2],
     "no-extra-semi": "off",
-    "semi": "off"
+    "semi": "off",
+    "space-before-function-paren": "off"
   },
   "globals": {
     "phaser": true
