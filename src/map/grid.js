@@ -17,7 +17,7 @@ export default class HexGrid {
   }
 
   static instance(size, origin) {
-    if(!instance) {
+    if (!instance) {
       instance = new HexGrid(size, origin);
     }
 
